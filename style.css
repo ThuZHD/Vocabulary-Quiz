@@ -1,6 +1,7 @@
 body{
     background-color: rgb(10, 15, 83);
     font-family: 'Jost', sans-serif;
+    text-align: center;
 }
 
 p {
@@ -8,9 +9,18 @@ p {
     font-family: 'Jost', sans-serif;
 }
 
-
-
 .buttons {
+    color: white;
     text-align: center;
+    border-radius: 50px;
+    width: 500px;
+    height: 50px;
+    background-color: rgb(15, 22, 119);
+    border-color: rgb(17, 60, 139);
+    border-width: 5px;
 }
 
+.text-align {
+    text-align: center;
+    color: white;
+}
