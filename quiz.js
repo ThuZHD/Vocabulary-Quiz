@@ -56,7 +56,7 @@ let french = [
     "A plus",
     "bien",
     "Au revoir",
-    "un ami une amie",
+    "un ami, une amie",
     "Bonjour, les amis!",
     "je m`appelle",
     "et",
