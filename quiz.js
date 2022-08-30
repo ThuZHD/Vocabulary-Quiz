@@ -92,6 +92,13 @@ let french = [
     "un animal",
 ]
 
+let buttons = [
+    "#btn1",
+    "#btn2",
+    "#btn3",
+    "#btn4",
+]
+
 let amount = 43;
 
 let score = 0;
@@ -110,6 +117,19 @@ let used3
 let used4
 
 function newVoc(){
+    const btn1 = document.querySelector("#btn1");
+    btn1.style.backgroundColor = "rgb(15, 22, 119)";
+    btn1.style.borderColor = "rgb(17, 60, 139)";
+    const btn2 = document.querySelector("#btn2");
+    btn2.style.backgroundColor = "rgb(15, 22, 119)";
+    btn2.style.borderColor = "rgb(17, 60, 139)";
+    const btn3 = document.querySelector("#btn3");
+    btn3.style.backgroundColor = "rgb(15, 22, 119)";
+    btn3.style.borderColor = "rgb(17, 60, 139)";
+    const btn4 = document.querySelector("#btn4");
+    btn4.style.backgroundColor = "rgb(15, 22, 119)";
+    btn4.style.borderColor = "rgb(17, 60, 139)";
+    
     document.getElementById("btnStart").innerHTML = "Load new voc";
     
     if(availableNewVoc === true) {
@@ -117,15 +137,15 @@ function newVoc(){
 
         availableNewVoc = false;
     
-        document.getElementById("Result").innerHTML = ""; 
-    
         number = Math.floor(Math.random() * amount);
 
-        rightSolution = number;
+        //rightSolution = number;
 
         document.getElementById("GermanTexts").innerHTML = german[number];
 
         order = Math.floor(Math.random() * 4);
+
+        rightSolution = order;
     
         if(order === 0){
         rightSolution = order;
@@ -211,21 +231,32 @@ function solution(x){
     
     if(x === rightSolution){
         console.log("right solution");
-        document.getElementById("Result").innerHTML = "right";
         
         if(scoreable === true){
             score = score + 1;
             document.getElementById("score").innerHTML = "Score: " + score;
             scoreable = false;
+
+            let testVariable = document.querySelector(buttons[x]);
+            testVariable.style.backgroundColor = "green";
+            testVariable.style.borderColor = "green";
         }
     }
     else{
         console.log("wrong solution");
-        document.getElementById("Result").innerHTML = "wrong";
+
         if(scoreable === true){
             score = score - 1;
             document.getElementById("score").innerHTML = "Score: " + score;
             scoreable = false;
+            
+            let testVariable = document.querySelector(buttons[x]);
+            testVariable.style.backgroundColor = "red";
+            testVariable.style.borderColor = "red";
+
+            let testVariable2 = document.querySelector(buttons[rightSolution]);
+            testVariable2.style.backgroundColor = "green";
+            testVariable2.style.borderColor = "green";
         }
     }
 }
