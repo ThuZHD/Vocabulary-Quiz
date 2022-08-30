@@ -110,6 +110,8 @@ let used3
 let used4
 
 function newVoc(){
+    document.getElementById("btnStart").innerHTML = "Load new voc";
+    
     if(availableNewVoc === true) {
         scoreable = true;
 
