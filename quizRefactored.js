@@ -98,7 +98,7 @@ let buttons = [
     "#btn1",
     "#btn2",
     "#btn3",
-    "#btn4",
+    "#btn5",
 ]
 
 let buttonsReplace = [
@@ -121,7 +121,7 @@ let positiveAnswers = [
 let negativeAnswers = [
     "schade",
     "niemand hat gesagt, dass es einfach wird",
-    "das nächste mal wird´s bessere",
+    "das nächste mal wird`s bessere",
     "Ich glaub an dich!",
     "DAS SCHAFFST DU!",
     "Französisch ist auch blöd",
