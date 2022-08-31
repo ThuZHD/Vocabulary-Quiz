@@ -98,7 +98,7 @@ let buttons = [
     "#btn1",
     "#btn2",
     "#btn3",
-    "#btn5",
+    "#btn4",
 ]
 
 let buttonsReplace = [
@@ -191,18 +191,22 @@ function newVoc(x) {
 function insertVoc(x, y) {
     if(x === 0) {
         document.getElementById("btn1").innerHTML = french[y];
+        used1 = y;
     }
 
     if(x === 1) {
         document.getElementById("btn2").innerHTML = french[y];
+        used2 = y;
     }
 
     if(x === 2) {
         document.getElementById("btn3").innerHTML = french[y];
+        used3 = y;
     }
 
     if(x === 3) {
         document.getElementById("btn4").innerHTML = french[y];
+        used4 = y;
     }
 }
 
