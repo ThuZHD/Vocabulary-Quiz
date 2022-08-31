@@ -99,6 +99,26 @@ let buttons = [
     "#btn4",
 ]
 
+let positiveAnswers = [
+    "gut gemacht!",
+    "WAHNSINN!",
+    "wow",
+    "cool",
+    "nice",
+    "du bist ein echtes Genie!",
+    "Ich bin stolz auf dich",
+]
+
+let negativeAnswers = [
+    "schade",
+    "niemand hat gesagt, dass es einfach wird",
+    "das nächste mal wird´s bessere",
+    "Ich glaub an dich!",
+    "DAS SCHAFFST DU!",
+    "Französisch ist auch blöd",
+    "komm schon!",
+]
+
 let amount = 43;
 
 let score = 0;
@@ -129,6 +149,7 @@ function newVoc(){
     const btn4 = document.querySelector("#btn4");
     btn4.style.backgroundColor = "rgb(15, 22, 119)";
     btn4.style.borderColor = "rgb(17, 60, 139)";
+    document.getElementById("result").innerHTML = "";
     
     document.getElementById("btnStart").innerHTML = "Load new voc";
     
@@ -239,7 +260,8 @@ function solution(x){
 
             let testVariable = document.querySelector(buttons[x]);
             testVariable.style.backgroundColor = "green";
-            testVariable.style.borderColor = "green";
+            testVariable.style.borderColor = "rgb(26, 136, 40)";
+            positiveAnswer();
         }
     }
     else{
@@ -252,11 +274,29 @@ function solution(x){
             
             let testVariable = document.querySelector(buttons[x]);
             testVariable.style.backgroundColor = "red";
-            testVariable.style.borderColor = "red";
+            testVariable.style.borderColor = "rgb(153, 9, 2)";
 
             let testVariable2 = document.querySelector(buttons[rightSolution]);
             testVariable2.style.backgroundColor = "green";
-            testVariable2.style.borderColor = "green";
+            testVariable2.style.borderColor = "rgb(26, 136, 40)";
+
+            negativeAnswer();
         }
     }
+}
+
+function positiveAnswer() {
+    randomNum = Math.floor(Math.random() * 7);
+
+    document.getElementById("result").innerHTML = positiveAnswers[randomNum];
+
+    console.log(randomNum);
+}
+
+function negativeAnswer() {
+    randomNum = Math.floor(Math.random() * 7);
+
+    document.getElementById("result").innerHTML = negativeAnswers[randomNum];
+
+    console.log(randomNum);
 }
