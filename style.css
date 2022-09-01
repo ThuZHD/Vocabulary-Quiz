@@ -20,6 +20,10 @@ p {
     border-width: 5px;
 }
 
+.buttons:hover {
+    background-color: rgb(27, 35, 148);
+}
+
 .text-align {
     text-align: center;
     color: white;
@@ -27,4 +31,14 @@ p {
 
 #result {
     color: white;
+}
+
+#catIMG {
+    height: 100%;
+    max-height: 150px;
+    text-align: center;
+}
+
+#test {
+    text-align: center;
 }

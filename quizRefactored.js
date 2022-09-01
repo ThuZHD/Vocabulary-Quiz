@@ -128,6 +128,9 @@ let negativeAnswers = [
     "komm schon!",
 ]
 
+const url = "https://api.thecatapi.com/v1/images/search";
+const api_key = "live_vkLDV9D7HPRZifGiKkQsPYSsJVQR1ljAxHLsLaMk9usbeVXYWv2eWZ4o1T4o81UO";
+
 let amount = 43;
 
 let score = 0;
@@ -226,6 +229,10 @@ function resetToDefault() {
     document.getElementById("result").innerHTML = "";
     
     document.getElementById("btnStart").innerHTML = "Load new voc";
+
+    document.getElementById("catIMG").src = "";
+
+    console.log("nigga");
 }
 
 function solution(x){
@@ -272,6 +279,8 @@ function positiveAnswer() {
     document.getElementById("result").innerHTML = positiveAnswers[randomNum];
 
     //console.log(randomNum);
+
+    getCat();
 }
 
 function negativeAnswer() {
@@ -280,4 +289,14 @@ function negativeAnswer() {
     document.getElementById("result").innerHTML = negativeAnswers[randomNum];
 
     console.log(randomNum);
+}
+
+async function getCat() {
+    let res = await fetch(url);
+
+    let data = await res.json();
+
+    let catURL = data["0"]["url"];
+
+    document.getElementById("catIMG").src = catURL;
 }

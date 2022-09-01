@@ -15,34 +15,40 @@
     
     <p id="score" class="text-align">Score:</p>
 
-    <div>
-        <button id="btnStart" class="buttons" onclick="loadNewVoc()">Start Game</button>
-    </div>    
+    <div id="test">
+        <div>
+            <button id="btnStart" class="buttons" onclick="loadNewVoc()">Start Game</button>
+        </div>    
 
-    <div>
-        <p></p>
+        <div>
+            <p></p>
+        </div>
+
+        <div>
+            <button id="btn1" class="buttons" onclick="solution(0)">Option 1</button>
+        </div>
+
+        <div>
+            <button id="btn2" class="buttons" onclick="solution(1)">Option 2</button>
+        </div>
+
+        <div>
+            <button id="btn3" class="buttons" onclick="solution(2)">Option 3</button>
+        </div>
+
+        <div>
+            <button id="btn4" class="buttons" onclick="solution(3)">Option 4</button>
+        </div>
     </div>
-
-    <div>
-        <button id="btn1" class="buttons" onclick="solution(0)">Option 1</button>
-    </div>
-
-    <div>
-        <button id="btn2" class="buttons" onclick="solution(1)">Option 2</button>
-    </div>
-
-    <div>
-        <button id="btn3" class="buttons" onclick="solution(2)">Option 3</button>
-    </div>
-
-    <div>
-        <button id="btn4" class="buttons" onclick="solution(3)">Option 4</button>
-    </div>
-
-    <div>
+    
+    <div class="text-align">
         <p id="result"></p>
     </div>
     
+    <div id="CatContainer">
+        <img id="catIMG" src="">
+    </div>
+ 
     <script src="quizRefactored.js"></script>
 </body>
 </html>
