@@ -10,3 +10,5 @@ async function getCat() {
 
     document.getElementById("catIMG").src = catURL;
 }
+
+//  vscode is great
