@@ -42,3 +42,50 @@ p {
 #test {
     text-align: center;
 }
+
+@media screen and (max-width: 500px) {
+    body{
+        background-color: rgb(10, 15, 83);
+        font-family: 'Jost', sans-serif;
+        text-align: center;
+    }
+    
+    p {
+        font-size: 32px;
+        font-family: 'Jost', sans-serif;
+    }
+    
+    .buttons {
+        color: white;
+        text-align: center;
+        border-radius: 50px;
+        width: 100%;
+        height: 50px;
+        background-color: rgb(15, 22, 119);
+        border-color: rgb(17, 60, 139);
+        border-width: 5px;
+    }
+    
+    .buttons:hover {
+        background-color: rgb(27, 35, 148);
+    }
+    
+    .text-align {
+        text-align: center;
+        color: white;
+    }
+    
+    #result {
+        color: white;
+    }
+    
+    #catIMG {
+        height: 100%;
+        max-height: 150px;
+        text-align: center;
+    }
+    
+    #test {
+        text-align: center;
+    }
+}
