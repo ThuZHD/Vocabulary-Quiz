@@ -43,15 +43,19 @@ p {
     text-align: center;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1080px) {
     body{
         background-color: rgb(10, 15, 83);
         font-family: 'Jost', sans-serif;
         text-align: center;
     }
     
+    h1 {
+        font-size: 10vw;
+    }
+
     p {
-        font-size: 32px;
+        font-size: 320%;
         font-family: 'Jost', sans-serif;
     }
     
@@ -60,10 +64,11 @@ p {
         text-align: center;
         border-radius: 50px;
         width: 100%;
-        height: 50px;
+        height: 10vw;
         background-color: rgb(15, 22, 119);
         border-color: rgb(17, 60, 139);
         border-width: 5px;
+        font-size: 5vw;
     }
     
     .buttons:hover {
