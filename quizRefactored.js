@@ -231,8 +231,6 @@ function resetToDefault() {
     document.getElementById("btnStart").innerHTML = "Load new voc";
 
     document.getElementById("catIMG").src = "";
-
-    console.log("nigga");
 }
 
 function solution(x){
