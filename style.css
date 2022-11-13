@@ -4,8 +4,17 @@ body{
     text-align: center;
 }
 
+h1 {
+}
+
+#GermanTexts {
+    position: relative;
+    top: 0px;
+    font-size: 50px;
+}
+
 p {
-    font-size: 32px;
+    font-size: 200%;
     font-family: 'Jost', sans-serif;
 }
 
@@ -13,11 +22,12 @@ p {
     color: white;
     text-align: center;
     border-radius: 50px;
-    width: 500px;
+    width: 360px;
     height: 50px;
     background-color: rgb(15, 22, 119);
     border-color: rgb(17, 60, 139);
-    border-width: 5px;
+    border-width: 10px;
+    font-size: 20px;
 }
 
 .buttons:hover {
@@ -34,8 +44,8 @@ p {
 }
 
 #catIMG {
-    height: 100%;
-    max-height: 150px;
+    border-radius: 1vw;
+    width: 360px;
     text-align: center;
 }
 
@@ -67,8 +77,8 @@ p {
         height: 10vw;
         background-color: rgb(15, 22, 119);
         border-color: rgb(17, 60, 139);
-        border-width: 5px;
-        font-size: 5vw;
+        border-width: 2vw;
+        font-size: 3vw;
     }
     
     .buttons:hover {
@@ -84,13 +94,24 @@ p {
         color: white;
     }
     
+    #catContainer {
+        width: 100%;
+        height: 400px;
+    }
+
     #catIMG {
-        height: 100%;
-        max-height: 150px;
+        border-radius: 1vw;
+        width: 100%;
+        max-width: 1500px;
+        max-height: 100%;
         text-align: center;
     }
     
     #test {
         text-align: center;
+    }
+
+    #result {
+        font-size: 5vw;
     }
 }
